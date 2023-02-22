@@ -10,10 +10,10 @@ function loader(element){
   element.textContent = '';
   loadInterval = setInterval(() => {
     element.textContent += '.';
-    if (element.textContent === '.......') {
+    if (element.textContent === '....') {
       element.textContent = '';
     }
-  }, 330)
+  }, 300)
 }
 
 function typeText(element, text) {
@@ -25,7 +25,7 @@ function typeText(element, text) {
     } else {
       clearInterval(interval);
     }
-  }, 30)
+  }, 20)
 }
 
 function generateRandomID() {
