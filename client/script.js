@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
   chatContainer.scrollTop = chatContainer.scrollHeight;
   const messageDiv = document.getElementById(uniqueID);
   loader(messageDiv);
-  const response = await fetch('https://localhost:5000', {
+  const response = await fetch('https://codex-michael.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
